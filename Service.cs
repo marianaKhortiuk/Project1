@@ -12,7 +12,7 @@ class Service
 {
     static async Task Main(string[] args)
     {
-        string filePath = "/Users/marianakhortiuk/.dotnet/work/sample-cab-data.csv";
+        string filePath = "path-to/sample-cab-data.csv";
 
         try
         {
@@ -131,7 +131,7 @@ class Service
     public static async Task SaveDataToDatabase(DataTable dataTable)
     {
         string connectionString =
-            "Server=localhost,1433;Database=cab47;User ID=SA;Password=7MyStrongPass123;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;";
+            "Server=localhost,1433;Database=db;User ID=SA;Password=YourPassword;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;";
 
         using (var connection = new SqlConnection(connectionString))
         {

@@ -8,6 +8,6 @@ public class AppDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=cab47;User ID=SA;Password=7MyStrongPass123;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;");
+        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=db;User ID=SA;Password=YourPassword;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;");
     }
 }
